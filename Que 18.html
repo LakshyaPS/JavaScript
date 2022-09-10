@@ -1,0 +1,38 @@
+<html>
+<body>
+<p>click on the button to see the results</p>
+<button onclick=fun()>Click Here</button>
+<p id=ans></p>
+<p id=index></p>
+<p id=lastindex></p>
+<p id=rep></p>
+<p id=one></p>
+<p id=two></p>
+<p id=three ></p>
+<p id=four></p>
+<p id=five></p>
+<p id=six></p>
+<p id=seven></p>
+<p id=eight></p>
+<p id=nine></p>
+<script>
+function fun()
+{
+name=prompt("Enter your name")
+len=name.length
+document.getElementById("ans").innerHTML="The length of your name is "+len
+document.getElementById("index").innerHTML="The position of a: "+name.indexOf("a")
+document.getElementById("lastindex").innerHTML="The last position of a: "+name.lastIndexOf("a")
+document.getElementById("rep").innerHTML="Replacement done: "+name.replace(/h/gi, "k")
+document.getElementById("one").innerHTML=name.replace(/0|a/gi, "Z")
+document.getElementById("two").innerHTML=name.charAt(3)
+document.getElementById("three").innerHTML=name.charCodeAt(3)
+document.getElementById("four").innerHTML=name.concat(" Welcome")
+document.getElementById("five").innerHTML=name.match("hya")
+document.getElementById("six").innerHTML=name.toUpperCase()
+document.getElementById("seven").innerHTML=name.toLowerCase()
+document.getElementById("eight").innerHTML=name.trim()
+document.getElementById("nine").innerHTML=name.substring(1,3)
+}
+</script>
+</body></html>

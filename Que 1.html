@@ -1,0 +1,28 @@
+<html>
+<body>
+	<p><i><b>Click on the button to get the results</b></i></p>
+		<button onclick=time()>Click me</button>
+		<p id=one></p>
+<script>
+	function time()
+	{
+	name=prompt("Enter your name please")
+	d=new Date()
+    h=d.getHours()
+	if(h>=4 && h<=11)
+		document.getElementById("one").innerHTML="Good Morning "+name
+	else if(h==12)
+		document.getElementById("one").innerHTML="Good Noon "+name
+	else if(h>=13 && h<=16)
+		document.getElementById("one").innerHTML="Good Afternoon "+name
+	else if(h>=17 && h<=23)
+		document.getElementById("one").innerHTML="Good Evening "+name
+	else if(h==24 || h>=1 && h<=3) 
+		document.getElementById("one").innerHTML="Good Midnight "+name
+	else
+		document.getElementById("one").innerHTML="ERROR!!" 
+}
+</script>
+</body>
+</html>
+ 

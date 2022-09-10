@@ -1,0 +1,21 @@
+<html>
+<body>
+	<p><i>Click the button to see the results</i><p>
+		<button onclick=fun()>Click Me</button>
+		<p id=one><p>
+			<p id=two><p>
+				<p id=three><p>
+		<script>
+			function fun()
+			{
+				num=parseInt(prompt("Enter the number"))
+				x=Math.random()
+				document.getElementById("one").innerHTML="Random number greater than the number entered is :"+(num+x)
+				if(num%2==0)
+					document.getElementById("three").innerHTML="Next even number after the number entered is: "+(num+2)
+				else
+					document.getElementById("three").innerHTML="Next even number after the number entered is: "+(num+1)
+			}
+		</script>
+	</body>
+	</html> 

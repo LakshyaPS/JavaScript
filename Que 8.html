@@ -1,0 +1,26 @@
+<html>
+<body>
+	<p><b><i>Click the button to get the result</i></b><p>
+		<button onclick=arm()>Click Me</button>
+		<p id=one><p>
+<script>
+	function arm()
+	{
+	num=parseInt(prompt("Enter the number"))
+	n=num
+	add=0
+	while(num!=0)
+	{
+		rem=num%10
+		quo=parseInt(num/10)
+		add=add+Math.pow(rem,3) 
+		num=quo
+	}
+	if(n==add)
+		document.getElementById("one").innerHTML=n+" is a armstrong number"
+	else
+		document.getElementById("one").innerHTML=n+" is not a armstrong number"
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<body>
+	<form>
+		Enter the first number <input type="text" id=one><br>
+		Enter the second number <input type="text" id=two><br><br>
+		<input type="button" value="+" onclick=add()>
+		<input type="button" value="*" onclick=mul()>
+		<input type="button" value="-" onclick=sub()>
+		<input type="button" value="/" onclick=div()><br><br>
+		RESULT <input type="text" id=three>
+	</form>
+	<script>
+		document.getElementById("three").disabled=true
+		function add()
+		{
+			x=parseInt(document.getElementById("one").value)
+			y=parseInt(document.getElementById("two").value)
+			document.getElementById("three").value=x+y
+		}
+		function mul()
+		{
+			x=parseInt(document.getElementById("one").value)
+			y=parseInt(document.getElementById("two").value)
+			document.getElementById("three").value=x*y
+		}
+		function sub()
+		{
+			x=parseInt(document.getElementById("one").value)
+			y=parseInt(document.getElementById("two").value)
+			document.getElementById("three").value=x-y
+		}
+		function div()
+		{
+			x=parseInt(document.getElementById("one").value)
+			y=parseInt(document.getElementById("two").value)
+			document.getElementById("three").value=x/y
+		}
+	</script>
+</body>
+</html>

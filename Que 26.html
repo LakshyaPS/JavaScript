@@ -1,0 +1,24 @@
+<html>
+<body>
+	<form>
+		Choose the activity: &nbsp<input type="radio" name=r1 id="v1">Dancing
+		                          <input type="radio" name=r1 id="v2">Music
+		                          <input type="radio" name=r1 id="v3">Sports<br>
+		                          <input type="button" value="CHECK" onclick=demo()><br>
+		                          <input type="text" id="v4" size=70>
+	</form>
+	<script>
+		function demo()
+		{
+			a="You have choosen: "
+			if(document.getElementById("v1").checked==true)
+				a="You have choosen: Dancing"
+			else if(document.getElementById("v2").checked==true)
+				a="You have choosen: Music"
+			else
+				a="You have choosen: Sports"
+			document.getElementById("v4").value=a
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<body>
+	<h1 align="center">DATA VALIDATION FORM</h1><br>
+	<form onsubmit=demo()>
+		Username <input type="text" id=one><br><br>
+		Password <input type="password" id=two><br><br>
+		Email-id <input type="text" id=three><br><br>
+		<input type="submit" value="SUBMIT">
+	</form>
+		<script>
+		function demo()
+		{
+			name=document.getElementById("one").value
+			pass=document.getElementById("two").value
+			ed=document.getElementById("three").value
+			if(name=="")
+				alert("Please enter a usename")
+			else if(pass="" || pass.length<8 || isNaN(parseInt(pass)))
+				alert("Please enter a valid password")
+			else if(ed="" || ed.indexOf("@")==-1 || ed.indexOf(".")==-1)
+				alert("Please enter a valid emai-id")
+			else
+				alert("Thank You! Your responses are recorded.")
+		}
+	</script>
+</body>
+</html>

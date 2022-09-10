@@ -1,0 +1,19 @@
+<html>
+<body>
+	<p><b><i>Click the button to get the result</i></b><p>
+		<button onclick=fact()>Click Me</button>
+		<p id=one><p>
+			<script>
+				function fact()
+				{
+					num=parseInt(prompt("Enter the number you want the factorial of"))
+					orial=1
+					for(i=num;i>=1;i--){
+						orial=orial*i
+					}
+					document.getElementById("one").innerHTML="Factorial for "+num+" is "+orial
+				}
+			</script>
+		</body>
+		</html>
+  

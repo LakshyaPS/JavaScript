@@ -1,0 +1,66 @@
+<html>
+<body>
+	<h1 align="center">APPLICATION FORM</h1>
+	<form action=external.html>
+		1. Name:&nbsp<input type="text" id="v1"><br><br>
+		
+		2. Gender:<br>
+		          Male <input type="radio" name=r1 id="v2">&nbsp
+		          Female <input type="radio" name="r1" id="v3"><br><br>
+	   
+	        3. Educational Qualifications:<select id=v4>
+	    	                           <option>Doctorate</option>
+	    	                           <option>Graduate</option>
+	    	                           <option>Postgraduate</option>
+	    	                           </select><br><br>
+
+	        4. Write details about your qualification:<br>
+	                                               <textarea rows=3 cols=30 id="v5">Qualification</textarea><br><br>
+	    
+	        5. Hobbies:<br>
+	                <input type="checkbox" id="v6">Reading &nbsp
+	                <input type="checkbox" id="v7">Sports &nbsp
+	                <input type="checkbox" id="v8">Internet Surfing &nbsp<br><br>
+        
+        <input type="submit" id="v7" value="submit">&nbsp&nbsp
+        <input type="reset" id="v8" value="Reset">&nbsp&nbsp
+        <input type="button" id="v9" value="Click" onclick=matrix()>
+        <script>
+        	function matrix()
+        	{
+        		name=document.getElementById("v1").value
+        		
+        		if(document.getElementById("v2").checked==true)
+        			gen="Male"
+        		else
+        			gen="Female"
+        		
+        		qual=document.getElementById("v4").value
+        		
+        		addqual=document.getElementById("v5").value
+        		Hob="Hobbbies are"
+        		if(document.getElementById("v6").checked==true)
+        			Hob=Hob+" Reading"
+        		if(document.getElementById("v7").checked==true)
+        			Hob=Hob+" Sports"
+        		if(document.getElementById("v8").checked==true)
+        			Hob=Hob+" Internet Surfing"
+
+
+                alert("Name: "+name+("\n")+"Gender: "+gen+("\n")+"Educational Qualifications: "+qual+("\n")+
+                	"Details about qualification: "+addqual+("\n")+"Hobbies: "+Hob)
+
+
+        	}
+                function sub()
+                {
+
+                }
+
+</script>
+</form>
+</body>
+</html>
+
+	                                               	
+	                                               

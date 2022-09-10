@@ -1,0 +1,21 @@
+<html>
+<script>
+	arr=[]
+	num=parseInt(prompt("How many values you want to pass?"))
+	for (i=1;i<=num;i++)
+	{
+		num2=parseInt(prompt("Enter the value"))
+		arr.push(num2)
+	}
+	function avg()
+	{
+		sum=0
+		num3=arguments.length
+		for(i=0;i<num3;i++)
+			sum=sum+arguments[i]
+		    average=sum/num3
+		document.write("Sum for the values entered is ",sum," and the average is ",average) 
+	}
+	avg.apply(null,arr)
+</script>
+</html>

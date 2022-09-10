@@ -1,0 +1,28 @@
+<html>
+<script>
+	arr=new Array()
+	for(i=1;i<=5;i++)
+	{
+		num=parseInt(prompt("Enter the number please"))
+		arr.push(num)
+	}
+	document.write(arr,"<br>")
+	document.write(arr.pop(),"<br>")
+	arr.unshift(0)
+	document.write(arr,"<br>")
+	document.write(arr.shift(),"<br>")
+	document.write(arr,"<br>")
+	document.write(arr.join("//"),"<br>")
+	document.write(arr.sort(),"<br>")
+	document.write(arr.sort().reverse(),"<br>")
+	document.write(arr.slice(1,4),"<br>")
+	arr.splice(2,1,44,99)
+	document.write(arr,"<br>")
+	arr.splice(3,0,21,31)
+	document.write(arr,"<br>")
+	b=["cat","fat","hat"]
+	document.write(arr.concat(b),"<br>")
+	x=arr.length
+	document.write(x)
+</script>
+</html>

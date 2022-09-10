@@ -1,0 +1,27 @@
+<html>
+<body>
+	<p>Click the button to see the result<p>
+		<button onclick=pal()>Click Me</button>
+		<p id=one><p>
+<script>
+	function pal()
+	{
+num=parseInt(prompt("Enter a number"))
+n=num
+rev=0
+while(num!=0)
+{
+	rem=num%10
+	quo=parseInt(num/10)
+	rev=rev*10+rem
+	num=quo
+}
+if(rev==n)
+	document.getElementById("one").innerHTML="It is a palindrome number"
+else
+	document.getElementById("one").innerHTML="It is not a palindrome number"
+}
+</script> 
+</body>
+</html>
+ 

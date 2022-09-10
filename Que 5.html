@@ -1,0 +1,18 @@
+<html>
+<body onload='alert("Welcome")'>
+	<button onclick=assn()>Try</button>
+	<p id=demo><p>
+	<script>
+		function assn()
+		{
+			name=prompt("Enter your name please")
+			x=confirm(name+", do you want to continue?")
+			if(x==true)
+				document.getElementById("demo").innerHTML="Thanks"
+			else
+				document.getElementById("demo").innerHTML="Sorry"
+		}
+	</script>
+</body>
+</html>
+

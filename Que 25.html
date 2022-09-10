@@ -1,0 +1,24 @@
+<html>
+<body>
+	<form>
+		Choose the activity: &nbsp<input type="checkbox" id="v1">Dancing
+		                          <input type="checkbox" id="v2">Music
+		                          <input type="checkbox" id="v3">Sports<br>
+		                          <input type="button" value="CHECK" onclick=demo()><br>
+		                          <input type="text" id="v5" size=70>
+	</form>
+	<script>
+		function demo()
+		{
+			a="You have choosen: "
+			if(document.getElementById("v1").checked==true)
+				a=a+"Dancing "
+			if(document.getElementById("v2").checked==true)
+				a=a+"Music "
+			if(document.getElementById("v3").checked==true)
+				a=a+"Sports "
+			document.getElementById("v5").value=a
+		}
+	</script>
+</body>
+</html>

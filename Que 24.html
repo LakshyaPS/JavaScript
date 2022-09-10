@@ -1,0 +1,19 @@
+<html>
+<body>
+	<form>
+		<input type="text" id="one" oninput=first()>&nbsp*
+		<input type="text" id="two" oninput=first()>&nbsp=
+		<input type="text" id="three">
+	</form>
+	<script>
+		document.getElementById("three").disabled=true
+		function first()
+		{
+			x=parseInt(document.getElementById("one").value)
+			y=parseInt(document.getElementById("two").value)
+			z=x*y
+			document.getElementById("three").value=z
+		}
+	</script>
+</body>
+</html>

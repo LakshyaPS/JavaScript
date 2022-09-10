@@ -1,0 +1,23 @@
+<html>
+<body>
+	<p>Click the button to get the results<p>
+		<button onclick=ht()>Click Me</button>
+		<p id=one><p>
+			<p id=two><p>
+			<script>
+				function ht()
+				{
+					arr=new Array()
+					for(i=1;i<=5;i++)
+					{
+						num=parseInt(prompt("Enter the height"))
+						arr.push(num)
+					}
+					arr.sort()
+					document.getElementById("one").innerHTML="Smallest height is "+arr[0]+" and tallest height is "+arr[4]
+					arr.reverse()
+					document.getElementById("two").innerHTML="Heights in descending order are: "+arr  
+				}
+			</script>
+		</body>
+		</html>
